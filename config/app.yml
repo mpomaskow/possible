@@ -1,0 +1,3 @@
+default:
+  .array:
+    languages: [pl]

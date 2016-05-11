@@ -1,0 +1,42 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Osoby
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Osoby
+    plural:                Osobys
+    route_prefix:          osoby
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        imie: { label: "Imię" }
+        miejscowosc: { label: "Miejscowość" }
+        oddzial_firmy: { label: "Oddział firmy" }
+        plec: { label: "Płeć" }
+        firmy: { label: "Firma" }
+        oddzialyFirmy: { label: "Odział firmy" }
+        miejscowosci: { label: "Miejscowość" }
+      list:
+        batch_actions: {}
+        title: Lista osób
+        sort: [id, asc]
+        display: [nazwisko, imie, miejscowosci, wiek, plec, firmy, oddzialyFirmy]
+        peer_method: doSelectJoinAll
+      filter:
+        class: false
+      form: ~
+      edit:
+        title: Edycja osoby "%%nazwisko%% %%imie%%"
+        actions:
+          _list: { label: Anuluj }
+          _save: ~
+      new:
+        title: Nowa osoba
+        actions:
+          _list: { label: Anuluj }
+          _save: ~

@@ -1,0 +1,4 @@
+all:
+  default_culture:    pl_PL
+  source:             XLIFF
+  cache:              on

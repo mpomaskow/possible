@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- possible schema -->
+<database name="propel" package="lib.model" defaultIdMethod="native">
+
+  <table name="osoby" phpName="Osoby">
+    <column name="id" type="INTEGER" size="11" required="true" primaryKey="true" autoIncrement="true" />
+
+    <column name="nazwisko" type="VARCHAR" size="255" required="true"/>
+    <column name="imie" type="VARCHAR" size="255" required="true"/>
+    <column name="miejscowosc" type="INTEGER" size="11" required="true"/>
+    <foreign-key foreignTable="miejscowosci" onDelete="CASCADE" onUpdate="CASCADE">
+      <reference local="miejscowosc" foreign="id" />
+    </foreign-key>
+    <column name="data_urodzenia" type="DATE" required="true" />
+    <column name="firma" type="INTEGER" size="11" required="true"/>
+    <foreign-key foreignTable="firmy" onDelete="CASCADE" onUpdate="CASCADE">
+      <reference local="firma" foreign="id" />
+    </foreign-key>
+    <column name="oddzial_firmy" type="INTEGER" size="11" required="true"/>
+    <foreign-key foreignTable="oddzialy_firmy" onDelete="CASCADE" onUpdate="CASCADE">
+      <reference local="oddzial_firmy" foreign="id" />
+    </foreign-key>
+
+    <column name="created_at" type="TIMESTAMP" required="true" />
+    <column name="updated_at" type="TIMESTAMP" required="true" />
+  </table>
+
+  <table name="miejscowosci" phpName="Miejscowosci">
+    <column name="id" type="INTEGER" size="11" required="true" primaryKey="true" autoIncrement="true" />
+    
+    <column name="nazwa" type="VARCHAR" size="255" required="true"/>
+
+    <column name="created_at" type="TIMESTAMP" required="true" />
+    <column name="updated_at" type="TIMESTAMP" required="true" />
+  </table>
+
+  <table name="firmy" phpName="Firmy">
+    <column name="id" type="INTEGER" size="11" required="true" primaryKey="true" autoIncrement="true" />
+
+    <column name="nazwa" type="VARCHAR" size="255" required="true"/>
+
+    <column name="created_at" type="TIMESTAMP" required="true" />
+    <column name="updated_at" type="TIMESTAMP" required="true" />
+  </table>
+
+  <table name="oddzialy_firmy" phpName="OddzialyFirmy">
+    <column name="id" type="INTEGER" size="11" required="true" primaryKey="true" autoIncrement="true" />
+
+    <column name="firma" type="INTEGER" size="11" required="true"/>
+    <foreign-key foreignTable="firmy" onDelete="CASCADE" onUpdate="CASCADE">
+      <reference local="firma" foreign="id" />
+    </foreign-key>
+    <column name="nazwa" type="VARCHAR" size="255" required="true"/>
+
+    <column name="created_at" type="TIMESTAMP" required="true" />
+    <column name="updated_at" type="TIMESTAMP" required="true" />
+  </table>
+</database>

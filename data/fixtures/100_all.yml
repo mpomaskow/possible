@@ -1,0 +1,136 @@
+Firmy:
+  Firmy_1:
+    nazwa: Honda
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  Firmy_2:
+    nazwa: Ferrari
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  Firmy_3:
+    nazwa: Zonda
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  Firmy_4:
+    nazwa: 'Aston Martin'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  Firmy_5:
+    nazwa: BMW
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  Firmy_6:
+    nazwa: Dodge
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  Firmy_7:
+    nazwa: Citroen
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+Miejscowosci:
+  Miejscowosci_1:
+    nazwa: Toruń
+    created_at: '2016-05-10 00:00:00'
+    updated_at: '2016-05-10 00:00:00'
+  Miejscowosci_2:
+    nazwa: Warszawa
+    created_at: '2016-05-10 00:00:00'
+    updated_at: '2016-05-10 00:00:00'
+  Miejscowosci_3:
+    nazwa: Szczecin
+    created_at: '2016-05-10 00:00:00'
+    updated_at: '2016-05-10 00:00:00'
+  Miejscowosci_4:
+    nazwa: Poznań
+    created_at: '2016-05-10 00:00:00'
+    updated_at: '2016-05-10 00:00:00'
+OddzialyFirmy:
+  OddzialyFirmy_1:
+    firma: Firmy_1
+    nazwa: 'Honda Oddział 1'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_2:
+    firma: Firmy_1
+    nazwa: 'Honda Oddział 2'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_3:
+    firma: Firmy_2
+    nazwa: 'Ferrari Oddział 1'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_4:
+    firma: Firmy_2
+    nazwa: 'Ferrari Oddział 2'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_5:
+    firma: Firmy_3
+    nazwa: 'Zonda Oddział 1'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_6:
+    firma: Firmy_3
+    nazwa: 'Zonda Oddział 2'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_7:
+    firma: Firmy_4
+    nazwa: 'Aston Martin Oddział 1'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_8:
+    firma: Firmy_4
+    nazwa: 'Aston Martin Oddział 2'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_9:
+    firma: Firmy_5
+    nazwa: 'BMW Oddział 1'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_10:
+    firma: Firmy_5
+    nazwa: 'BMW Oddział 2'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_11:
+    firma: Firmy_6
+    nazwa: 'Dodge Oddział 1'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_12:
+    firma: Firmy_6
+    nazwa: 'Dodge Oddział 2'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_13:
+    firma: Firmy_7
+    nazwa: 'Citroen Oddział 1'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+  OddzialyFirmy_14:
+    firma: Firmy_7
+    nazwa: 'Citroen Oddział 2'
+    created_at: '2016-05-11 00:00:00'
+    updated_at: '2016-05-11 00:00:00'
+Osoby:
+  Osoby_1:
+    nazwisko: Kowalski
+    imie: Jan
+    miejscowosc: Miejscowosci_1
+    data_urodzenia: '1980-05-03'
+    firma: Firmy_3
+    oddzial_firmy: OddzialyFirmy_5
+    created_at: '2016-05-11 01:16:20'
+    updated_at: '2016-05-11 15:12:59'
+  Osoby_2:
+    nazwisko: Piotr
+    imie: Nowak
+    miejscowosc: Miejscowosci_2
+    data_urodzenia: '1990-10-17'
+    firma: Firmy_7
+    oddzial_firmy: OddzialyFirmy_14
+    created_at: '2016-05-11 15:14:02'
+    updated_at: '2016-05-11 15:14:02'

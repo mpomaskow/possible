@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="pl" datatype="plaintext" original="messages" date="2011-05-18T22:50:38Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Required.</source>
+        <target>Pole wymagane</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Is active</source>
+        <target>Aktywny</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Invalid.</source>
+        <target>Pole wypełnione niepoprawnie.</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Are you sure?</source>
+        <target>Czy jesteś pewien?</target>
+      </trans-unit>
+      <trans-unit id="5">
+          <source>An object with the same "%column%" already exist.</source>
+          <target>Obiekt z tym samym wpisem "%column%" już istnieje</target>
+      </trans-unit>
+      <trans-unit id="6">
+          <source>"%value%" is not an integer.</source>
+          <target>Podana wartość "%value%" nie jest liczbą całkowitą.</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Updated at</source>
+        <target>Data aktualizacji</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>"%value%" is not a number.</source>
+        <target>"%value%" nie jest cyfrą.</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Invalid. Correct format YYYY-MM-DD.</source>
+        <target>Pole wypełnione niepoprawnie. Poprawny format YYYY-MM-DD.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

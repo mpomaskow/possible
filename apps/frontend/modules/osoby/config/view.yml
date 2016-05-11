@@ -1,0 +1,7 @@
+editSuccess:
+  stylesheets: [/js/jquery-ui-1.11.4/jquery-ui.min.css]
+  javascripts: [jquery/jquery-2.2.3.min.js, jquery-ui-1.11.4/jquery-ui.min.js, jquery-ui-1.11.4/locale/jquery.ui.datepicker-pl.js, frontend/OsobyForm.js]
+  
+newSuccess:
+  stylesheets: [/js/jquery-ui-1.11.4/jquery-ui.min.css]
+  javascripts: [jquery/jquery-2.2.3.min.js, jquery-ui-1.11.4/jquery-ui.min.js, jquery-ui-1.11.4/locale/jquery.ui.datepicker-pl.js, frontend/OsobyForm.js]

@@ -1,0 +1,69 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/05-Factories
+
+#prod:
+#  logger:
+#    class:   sfNoLogger
+#    param:
+#      level:   err
+#      loggers: ~
+
+prod:
+  logger:
+    param:
+      level: err
+
+test:
+  storage:
+    class: sfSessionTestStorage
+    param:
+      session_path: %SF_TEST_CACHE_DIR%/sessions
+
+  response:
+    class: sfWebResponse
+    param:
+      send_http_headers: false
+
+  mailer:
+    param:
+      delivery_strategy: none
+
+dev:
+  mailer:
+    param:
+      delivery_strategy: none
+
+all:
+  routing:
+    class: sfPatternRouting
+    param:
+      generate_shortest_url:            true
+      extra_parameters_as_query_string: true
+      suffix:                           .html
+#      cache:
+#        class: sfAPCCache #sfFileCache
+#        param:
+#          automatic_cleaning_factor: 1
+#          cache_dir:                 %SF_CONFIG_CACHE_DIR%/routing
+#          lifetime:                  86400 #31556926
+#          prefix:                    %SF_APP_DIR%
+
+  view_cache_manager:
+    class: sfViewCacheManager
+    param:
+      cache_key_use_vary_headers: true
+      cache_key_use_host_name:    true
+
+  view_cache:
+    class: sfSQLite3Cache #sfSQLiteCache #sfSQLite3Cache #sfSQLiteCache #sfFileCache
+    param:
+      automatic_cleaning_factor: 1
+      cache_dir:                 %SF_TEMPLATE_CACHE_DIR%
+      database:                  %SF_TEMPLATE_CACHE_DIR%/cache.db
+      lifetime:                  2592000 #86400
+      prefix:                    %SF_APP_DIR%
+
+  storage:
+    class: sfSessionStorage
+    param:
+      session_name: frontend
